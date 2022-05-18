@@ -48,3 +48,7 @@ sudo apt-get upgrade
 ```
 apt-get install docker-compose
 ```
+
+<br>
+
+#### Referência: https://docs.docker.com/engine/install/ubuntu/
