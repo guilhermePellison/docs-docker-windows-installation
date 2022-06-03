@@ -46,7 +46,7 @@ sudo apt-get upgrade
 ```
 
 ```
-apt-get install docker-compose
+sudo apt-get install docker-compose
 ```
 
 <br>
