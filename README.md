@@ -1,8 +1,37 @@
 # INSTALAÇÃO DOCKER
 
-### Baixe o ubuntu na microsoft store, em seguida abra e rode os comandos:
+## Baixe o ubuntu na microsoft store, em seguida abra e rode os comandos:
 
-    sudo apt-get update
+### Removendo os ventigios de antigas instalações:
+```
+sudo apt-get remove docker docker-engine docker.io containerd runc
+```
+
+```
+sudo apt-get purge docker-ce
+```
+
+```
+sudo rm -rf /var/lib/docker
+```
+
+```
+sudo apt-get purge docker-ce docker-ce-cli containerd.io docker-compose-plugin
+```
+
+```
+sudo rm -rf /var/lib/docker
+```
+
+```
+sudo rm -rf /var/lib/containerd
+```
+
+### Instalando o Docker:
+
+```
+sudo apt-get update
+```
 
 ```
 sudo apt-get install \
@@ -12,7 +41,9 @@ sudo apt-get install \
     lsb-release
 ```
 
-    sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+```
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+```
 
 ```
 echo \
